@@ -1,0 +1,66 @@
+node -v
+# v21.0.0
+
+criar .env
+controller
+tmp
+migrations
+models
+-------------------------------------------------------
+	Adonis Js
+
+abrir o cmd
+
+e jogar esse comando;
+
+npm init adonisjs@latest restaurante
+
+api>
+acess>
+sqlite
+
+code restaurate
+-----------------------------------------------------
+node ace configure @adonisjs/lucid
+
+
+# Configure with MYSQL
+node ace configure @adonisjs/lucid --db=mysql
+
+sqlite
+--------------------------------------------------------
+
+	mysql
+xampp
+mysql workbench
+criar o banco de dados com nome exemplo:"restaurante"
+--------------------------------------------------------
+para iniciar o codigo: npm run dev
+
+--------------------------------------------------------
+node ace make:controller Produtos (cria o controller)
+node ace make:migration Produto
+node ace make:model Produto
+node ace make:model Cliente -m -c (cria tudo)
+node ace make:seeder 1_Tipo 
+node ace list:routes
+---------------------------------------------------------
+router.resource('/produtos', ProdutosController)
+
+ctrl + , = fold compa
+
+-------------------------------------------------------------
+npm i better-sqlite3
+npm i sqlite3
+node ace migration:run
+node ace migration:rollback
+node ace migration:refresh
+node ace migration:refresh --seed
+
+
+node ace db:seed
+
+
+codigo tem que ter controllers, models, migration e seeders
+----------------------------------------------------------------------
+('tipoId', 1) e a informação do id do produto e depois e definido a pagina paginate(1)
